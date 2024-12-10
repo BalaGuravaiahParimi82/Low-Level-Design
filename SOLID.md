@@ -1,3 +1,5 @@
+### SOLID Design Principles
+
 - S -- Single Responsible Principle(SRP)
 - O -- Open/Closed Principle(OCP)
 - L -- Liskow Substitution Principle
@@ -21,7 +23,7 @@ Making changes in Invoice class each and every time for multiple reasons like wh
 
 - - single --> Multiple
 
-
+##### Marker.java
 ```java
 package com.demo.S;
 
@@ -42,7 +44,7 @@ public class Marker {
 }
 
 ```
-
+##### Invoice.java
 ```java
 package com.demo.S;
 
@@ -78,6 +80,7 @@ public class InVoice {
 
  Here is the code which has single reason for each class.
 
+##### InvoiceDAO.java
  ```java
 
  package com.demo.S;
@@ -99,7 +102,7 @@ public class InVoiceDAO {
 }
 
 ```
-
+##### InvoicePrinter.java
 ```java
 package com.demo.S;
 
@@ -122,7 +125,7 @@ From the above code we don't need to touch InVoice frequently.
 
 - - single -> single
 
-- Simply, In Spring Boot purspective we have Controller, Business, Data Layer seperately which will seperately. which is a Layered architecture.
+- Simply, In Spring Boot purspective we have Controller, Business, Data Layer seperately which is a Layered architecture.
 
 
 
